@@ -16,6 +16,7 @@ module tt_um_example (
     input  wire       rst_n     // reset_n - low to reset
 );
 
+
   wire rst = ~rst_n;
 
   // Asignación de entradas del juego
