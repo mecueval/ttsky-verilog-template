@@ -1,20 +1,13 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
 
 ## How it works
 
-Explain how your project works
+This project implements a simple number guessing game in hardware. A 4-bit LFSR generates a pseudo-random number between 1 and 15 when a new game starts. The user has 3 attempts to guess the number. After each guess, the system provides a hint indicating whether the correct number is higher, lower, or correct. The game ends when the user guesses correctly or runs out of attempts.
 
 ## How to test
 
-Explain how to use your project
+Set a guess value using `ui[3:0]`, then trigger a guess by pulsing `verify` (`ui[4]`). The outputs will indicate whether the guess is higher, lower, or correct, and show the remaining attempts. Start a new game by pulsing `new_game` (`ui[5]`). The outputs `uo[2:0]` provide hints, `uo[3]` indicates a correct guess, and `uo[5:4]` show remaining attempts.
+
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is required. LEDs or a logic analyzer can be used to observe the outputs.
