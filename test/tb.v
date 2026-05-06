@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  ttt_um_ieee_opensilicon_bootcamp (
+  tt_um_ieee_opensilicon_bootcamp(
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
