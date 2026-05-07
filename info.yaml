@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "Guess the Number Game"
+  title:        "Guess the Number Game - IEEE OpenSilicon Bootcamp"
   author:       "Maria Emilia Cueva"
   discord:      ""
   description:  "Guessing game with 3 attempts and hints."
